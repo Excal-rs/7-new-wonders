@@ -1,0 +1,173 @@
+#landing {
+    position: relative;
+    height: 100vh;
+}
+
+#landing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 95%;
+    height: 100%;
+}
+
+#landing-grid .vertical-1 {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    /* border-right: 1px solid black; */
+}
+
+#big-seven {
+    font-size: 30em;
+    margin-top: -7rem;
+
+    /* TODO: Fix this */
+
+    position: relative;
+}
+
+.intro-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#nw-line1 {
+    margin-left: -1.25rem;
+}
+
+#nw-line2 {
+    margin-left: -2rem;
+}
+
+#nw-line3 {
+    margin-left: -3rem;
+}
+#landing-grid .vertical-2 {
+    /* background-color: blue; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-website-small {
+    font-size: 2rem;
+    max-width: 30rem;
+
+    font-weight: 500;
+
+
+    /* TODO: Decide if i want the mask or nah? */
+}
+
+
+
+#arc-nav {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+
+    z-index: 100;
+}
+
+.arc-nav-button {
+    display: flex;
+
+    height: 3.25rem;
+    width: 3.25rem;
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1.5rem;
+
+    transition: all 0.15s;
+}
+
+.arc-nav-icons {
+    width: 70%;
+    height: 70%;
+
+    padding: 0.35rem;
+}
+
+#nav1 {
+    margin-left: 22.78%;
+}
+
+#nav2 {
+    margin-left: 16.53%;
+}
+
+#nav3 {
+    margin-left: 12.36%;
+}
+
+#nav4 {
+    margin-left: 10.97%;
+}
+
+#nav5 {
+    margin-left: 10.97%;
+}
+
+#nav6 {
+    margin-left: 12.36%;
+}
+
+#nav7 {
+    margin-left: 16.53%;
+}
+
+#nav8 {
+    margin-left: 22.78%;
+}
+
+.arc-nav-button:hover {
+    cursor: pointer;
+
+    transform: scale(1.5);
+}
+
+#divider-1-image {
+    position: absolute;
+    transform: rotate(90deg);
+
+    height: auto;
+    width: 60vh;
+}
+
+#project-background {
+    flex-direction: column;
+}
+
+#project-background-text {
+    text-align: center;
+    width: 70rem;
+
+    font-size: 1.5rem;
+}
+
+#divider-2-image {
+    display: block;
+    height: 10rem;
+    width: auto;
+}
