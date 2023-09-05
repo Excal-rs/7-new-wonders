@@ -1,0 +1,46 @@
+#info-landing {
+    margin-top: 7.25rem;
+    display: block;
+}
+
+#landing-grid {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+
+    width: 100%;
+    height: calc(100vh - 7.25rem);
+
+    align-items: center;
+}
+#landing-image-container {
+    z-index: 1;
+}
+
+#background-image {
+    mask-image: linear-gradient(to right, black, transparent);
+}
+
+#info-title {
+    position: static;
+    /* height: 60vh; */
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* justify-content: ; */
+}
+
+#page-title-main {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+#wonder-fact-list {
+    font-size: 2rem;
+    text-transform: capitalize;
+
+    margin-left: 1em;
+}

@@ -1,0 +1,31 @@
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 7rem;
+    padding: 1rem;
+}
+
+.horizontal-divider {
+    height: 100%;
+    width: auto;
+}
+
+#textual-description {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 80vw;
+}
+
+#divider-1h-container {
+    margin-top: 3rem;
+}
+#divider-2h-container {
+    margin-bottom: 3rem;
+}
+
+#divider-2h {
+    transform: rotate(180deg);
+}
+
