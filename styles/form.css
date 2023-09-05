@@ -1,0 +1,34 @@
+.form-label {
+    font-family: Arial;
+}
+
+#hpage-form div {
+    margin-bottom: 0.5rem;
+}
+
+#hpage-form {
+    width: 45%;
+}
+
+#hpage-form div {
+    width: 100%;
+}
+
+#hpage-form select{
+    height: 2rem;
+    padding: 0.2rem;
+}
+
+#hpage-form input {
+    width: 100%;
+    height: 2rem;
+
+    padding-left: 0.2rem;
+}
+
+#hpage-form button {
+    height: 2rem;
+    padding: 0.2rem;
+}
+
+/*  TODO: style the story */

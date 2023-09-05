@@ -15,10 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
 
-    <!-- Linking all CSS files -->
+    <!-- Linking all files -->
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/landing.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/form.css">
 </head>
 <body>
     <header>
@@ -32,28 +33,28 @@
                 <nav id="arc-nav">
                     <div style="height: 4rem;"></div>
 
-                    <div class="arc-nav-button" id="nav1">
+                    <div class="arc-nav-button" id="nav1" onclick="location.href = 'wonders/pyramid-of-giza.html'">
                         <img src="./icons/giza.svg" class="arc-nav-icons">
                     </div>
-                    <div class="arc-nav-button" id="nav2">
+                    <div class="arc-nav-button" id="nav2" onclick="location.href = 'wonders/great-wall-of-china.html'">
                         <img src="./icons/china.svg" class="arc-nav-icons">
                     </div>
-                    <div class="arc-nav-button" id="nav3">
+                    <div class="arc-nav-button" id="nav3" onclick="location.href = 'wonders/petra.html'">
                         <img src="./icons/petra.svg" class="arc-nav-icons">
                     </div>
                     <div class="arc-nav-button" id="nav4">
-                        <img src="./icons/colosseum.svg" class="arc-nav-icons">
+                        <img src="./icons/colosseum.svg" class="arc-nav-icons" onclick="location.href = 'wonders/colosseum.html'">
                     </div>
                     <div class="arc-nav-button" id="nav5">
-                        <img src="./icons/itza.svg" class="arc-nav-icons">
+                        <img src="./icons/itza.svg" class="arc-nav-icons" onclick="location.href = 'wonders/chichen-itza.html'">
                     </div>
                     <div class="arc-nav-button" id="nav6">
-                        <img src="./icons/pichu.svg" class="arc-nav-icons">
+                        <img src="./icons/pichu.svg" class="arc-nav-icons" onclick="location.href = 'wonders/machu-picchu.html'">
                     </div>
                     <div class="arc-nav-button" id="nav7">
-                        <img src="./icons/taj.svg" class="arc-nav-icons">
+                        <img src="./icons/taj.svg" class="arc-nav-icons" onclick="location.href = 'wonders/taj-mahal.html'">
                     </div>
-                    <div class="arc-nav-button" id="nav8">
+                    <div class="arc-nav-button" id="nav8" onclick="location.href = 'wonders/christ-the-redeemer.html'">
                         <img src="./icons/christ.svg" class="arc-nav-icons">
                     </div>
                 </nav>
@@ -85,20 +86,20 @@
     </section>
 
     <section id="form-section">
-        <form action="./scripts/form.php" method="post">
+        <form action="./scripts/form.php" id="hpage-form" method="post">
             <div>
-                <label for="Name">Name: *</label> <br>
+                <label for="Name" class="form-label">Name:</label> <br>
                 <input type="text" id="name" name="name" required>
             </div>
 
             <div>
-                <label for="email">Email:</label> <br>
-                <input type="email" id="email" name="email">
+                <label for="email" class="form-label">Email:</label> <br>
+                <input type="email" id="email" name="email" required>
             </div>
 
             <div>
-                <label for="wonder-option">Which of the wonders did you visit?</label> <br>
-                <select id="wonder-option" name="wonder-option">
+                <label for="wonder-option" class="form-label">Which of the wonders did you visit?</label> <br>
+                <select id="wonder-option" name="wonder-option" required>
                     <option value="giza">Pyramids of Giza (honorary)</option>
                     <option value="china">Great Wall of China</option>
                     <option value="petra">Petra</option>
@@ -111,8 +112,8 @@
             </div>
 
             <div>
-                <label for="story">Tell us your story!</label> <br>
-                <input name="story" id="story" type="text">
+                <label for="story" class="form-label">Tell us your story!</label> <br>
+                <input name="story" id="story" type="text" required>
             </div>
 
             <div>
