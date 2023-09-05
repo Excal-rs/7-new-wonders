@@ -17,6 +17,9 @@
 }
 
 #background-image {
+    -webkit-mask-image: linear-gradient(to right, black, transparent);
+    -o-mask-image: linear-gradient(to right, black, transparent);
+    -moz-mask-image: linear-gradient(to right, black, transparent);
     mask-image: linear-gradient(to right, black, transparent);
 }
 
