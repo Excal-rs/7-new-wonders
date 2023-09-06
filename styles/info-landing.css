@@ -14,6 +14,7 @@
 }
 #landing-image-container {
     z-index: 1;
+    height: 100%;
 }
 
 #background-image {
@@ -21,6 +22,9 @@
     -o-mask-image: linear-gradient(to right, black, transparent);
     -moz-mask-image: linear-gradient(to right, black, transparent);
     mask-image: linear-gradient(to right, black, transparent);
+
+    height: calc(100vh - 7.25rem);
+    width: auto;
 }
 
 #info-title {
