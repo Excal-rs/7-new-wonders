@@ -21,7 +21,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
 
+    <!-- JavaScript -->
+    <script>
+        function formCompletionMessage(event) {
+            event.preventDefault();
+            let date = document.getElementById('date').value;
+
+            let comparedate = new Date(date);
+            const today = new Date();
+
+            if (comparedate > today) {
+                window.alert("Invalid Date, retry");
+            } else {
+                let fname = document.getElementById('fname').value;
+                let lname = document.getElementById('lname').value;
+                let email = document.getElementById('email').value;
+                let wonder = document.getElementById('wonder-option').value;
+            let story = document.getElementById('story').value;
+            
+            let message = `Confirm Your Details: 
+            First Name: ${fname} \n 
+            Last Name: ${lname} \n 
+            Email: ${email} \n 
+            Date: ${date} \n
+            Wonder: ${wonder} \n \n 
+            Your Story: ${story}
+            `
+            window.alert(message)
+}
+}
+    </script>
     <!-- This is the only file in the "wonders" directory that will be commented as they are all the same, just different text and images -->
+
 
 </head>
 <body>

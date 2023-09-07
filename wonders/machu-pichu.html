@@ -21,6 +21,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
 
+    <!-- JavaScript -->
+    <script>
+        function formCompletionMessage(event) {
+            event.preventDefault();
+            let date = document.getElementById('date').value;
+
+            let comparedate = new Date(date);
+            const today = new Date();
+
+            if (comparedate > today) {
+                window.alert("Invalid Date, retry");
+            } else {
+                let fname = document.getElementById('fname').value;
+                let lname = document.getElementById('lname').value;
+                let email = document.getElementById('email').value;
+                let wonder = document.getElementById('wonder-option').value;
+            let story = document.getElementById('story').value;
+            
+            let message = `Confirm Your Details: 
+            First Name: ${fname} \n 
+            Last Name: ${lname} \n 
+            Email: ${email} \n 
+            Date: ${date} \n
+            Wonder: ${wonder} \n \n 
+            Your Story: ${story}
+            `
+            window.alert(message)
+}
+}
+    </script>
+
 </head>
 <body>
     <header>
@@ -93,47 +124,48 @@
             <img src="../images/fancy-divider.png" id="divider-2h" class="horizontal-divider">
         </div>
 
-        <section id="form-section">
-    <form action="./scripts/form.php" id="hpage-form" method="post">
-        <div class="names-input-grid">
-            <label for="fname" class="form-label">First Name:</label> <br>
-            <input type="text" id="fname" name="fname" required>
-            <label for="lname" class="form-label">Last Name:</label> <br>
-            <input type="text" id="lname" name="lname" required>
-        </div>
-
-        <div>
-            <label for="email" class="form-label">Email:</label> <br>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div>
-            <label for="wonder-option" class="form-label">Which of the wonders did you visit?</label> <br>
-            <select id="wonder-option" name="wonder-option" required>
-                <option value="giza">Pyramids of Giza (honorary)</option>
-                <option value="china">Great Wall of China</option>
-                <option value="petra">Petra</option>
-                <option value="colosseum">The colosseum</option>
-                <option value="chichen-itza">Chichen Itza</option>
-                <option value="machu-picchu">Machu Picchu</option>
-                <option value="taj-mahal">Taj Mahal</option>
-                <option value="christ-the-redeemer">Christ the Redeemer</option>
-            </select>
-
-            <br>
-            <label for="date" class="form-label" required>Date of Visit:</label> <br>
-            <input type="date" name="date" id="date">
-        </div>
-
-        <div>
-            <label for="story" class="form-label">Tell us your story!</label> <br>
-            <input name="story" id="story" type="text" value="Submit your experience" required>
-        </div>
-
-        <div>
-            <input type="submit" id="submit-button">
-        </div>
-    </form>
-        </section>
+    <section id="form-section">
+        <form action="" id="hpage-form" method="post">
+            <div class="names-input-grid">
+                <label for="fname" class="form-label">First Name:</label> <br>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname" class="form-label">Last Name:</label> <br>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+    
+            <div>
+                <label for="email" class="form-label">Email:</label> <br>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div>
+                <label for="wonder-option" class="form-label">Which of the wonders did you visit?</label> <br>
+                <select id="wonder-option" name="wonder-option" required>
+                    <option value="giza">Pyramids of Giza (honorary)</option>
+                    <option value="china">Great Wall of China</option>
+                    <option value="petra">Petra</option>
+                    <option value="colosseum">The colosseum</option>
+                    <option value="chichen-itza">Chichen Itza</option>
+                    <option value="machu-picchu">Machu Picchu</option>
+                    <option value="taj-mahal">Taj Mahal</option>
+                    <option value="christ-the-redeemer">Christ the Redeemer</option>
+                </select>
+    
+                <br>
+                <label for="date" class="form-label" required>Date of Visit:</label> <br>
+                <input type="date" name="date" id="date">
+            </div>
+    
+            <div>
+                <label for="story" class="form-label">Tell us your story!</label> <br>
+                <input name="story" id="story" type="text" value="Submit your experience" required>
+            </div>
+    
+            <div>
+                <!-- Submits the page info -->
+                <button onclick="formCompletionMessage(event)">Check data Entered</button>
+            </div>
+        </form>
+    </section>
 </body>
 </html>

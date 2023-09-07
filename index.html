@@ -20,6 +20,37 @@
     <link rel="stylesheet" href="./styles/landing.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/form.css">
+
+    <!-- JavaScript -->
+    <script>
+        function formCompletionMessage(event) {
+            event.preventDefault();
+            let date = document.getElementById('date').value;
+
+            let comparedate = new Date(date);
+            const today = new Date();
+
+            if (comparedate > today) {
+                window.alert("Invalid Date, retry");
+            } else {
+                let fname = document.getElementById('fname').value;
+                let lname = document.getElementById('lname').value;
+                let email = document.getElementById('email').value;
+                let wonder = document.getElementById('wonder-option').value;
+            let story = document.getElementById('story').value;
+            
+            let message = `Confirm Your Details: 
+            First Name: ${fname} \n 
+            Last Name: ${lname} \n 
+            Email: ${email} \n 
+            Date: ${date} \n
+            Wonder: ${wonder} \n \n 
+            Your Story: ${story}
+            `
+            window.alert(message)
+}
+}
+    </script>
 </head>
 <body>
     <section id="landing">
@@ -89,19 +120,20 @@
 
     <!-- The form -->
     <section id="form-section">
-        <form action="./scripts/form.php" id="hpage-form" method="post">
-            <div>
-                <label for="name" class="form-label">Name:</label> <br>
-                <input type="text" id="name" name="name" required>
+        <form action="" id="hpage-form" method="post">
+            <div class="names-input-grid">
+                <label for="fname" class="form-label">First Name:</label> <br>
+                <input type="text" id="fname" name="fname" required>
+                <label for="lname" class="form-label">Last Name:</label> <br>
+                <input type="text" id="lname" name="lname" required>
             </div>
-
+    
             <div>
                 <label for="email" class="form-label">Email:</label> <br>
                 <input type="email" id="email" name="email" required>
             </div>
-
+    
             <div>
-                <!-- Dropdown Menu -->
                 <label for="wonder-option" class="form-label">Which of the wonders did you visit?</label> <br>
                 <select id="wonder-option" name="wonder-option" required>
                     <option value="giza">Pyramids of Giza (honorary)</option>
@@ -113,18 +145,20 @@
                     <option value="taj-mahal">Taj Mahal</option>
                     <option value="christ-the-redeemer">Christ the Redeemer</option>
                 </select>
+    
+                <br>
+                <label for="date" class="form-label" required>Date of Visit:</label> <br>
+                <input type="date" name="date" id="date">
             </div>
-
-
-            <!-- Add the story -->
+    
             <div>
                 <label for="story" class="form-label">Tell us your story!</label> <br>
                 <input name="story" id="story" type="text" value="Submit your experience" required>
             </div>
-
+    
             <div>
                 <!-- Submits the page info -->
-                <button type="submit">Submit</button>
+                <button onclick="formCompletionMessage(event)">Check data Entered</button>
             </div>
         </form>
     </section>
