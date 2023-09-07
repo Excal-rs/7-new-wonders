@@ -27,5 +27,6 @@
 
 #divider-2h {
     transform: rotate(180deg);
+    /* Makes the divider, horizontal */
 }
 

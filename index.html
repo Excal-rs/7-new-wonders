@@ -22,16 +22,14 @@
     <link rel="stylesheet" href="./styles/form.css">
 </head>
 <body>
-    <header>
-        <!-- TODO: Create header and nav -->
-    </header>
-
     <section id="landing">
 
         <div id="landing-grid">
+            <!-- Creating a grid so i can create a left and a right segment -->
             <div class="vertical-1">
                 <nav id="arc-nav">
-                    <div style="height: 4rem;"></div>
+                    <div style="height: 4rem;"></div> 
+                    <!-- This spaces the nav buttons lower as it was too high -->
 
                     <div class="arc-nav-button" id="nav1" onclick="location.href = 'wonders/pyramid-of-giza.html'">
                         <img src="./icons/giza.svg" class="arc-nav-icons">
@@ -57,6 +55,7 @@
                     <div class="arc-nav-button" id="nav8" onclick="location.href = 'wonders/christ-the-redeemer.html'">
                         <img src="./icons/christ.svg" class="arc-nav-icons">
                     </div>
+                    
                 </nav>
 
 
@@ -65,6 +64,7 @@
                     <p class="intro-title" id="nw-line1">New Wonders</p>
                     <p class="intro-title" id="nw-line2">of the</p>
                     <p class="intro-title" id="nw-line3">World</p>
+                    <!-- Using different lines so I can, position them differently -->
                 </div>
                 
             </div>
@@ -74,6 +74,7 @@
         </div>
 
         <img src="./images/fancy-vertical-divider.png" id="divider-1-image">
+        <!-- A simple divider -->
     
     </section>
 
@@ -85,10 +86,12 @@
         <img src="./images/fancy-divider.png" id="divider-2-image">
     </section>
 
+
+    <!-- The form -->
     <section id="form-section">
         <form action="./scripts/form.php" id="hpage-form" method="post">
             <div>
-                <label for="Name" class="form-label">Name:</label> <br>
+                <label for="name" class="form-label">name:</label> <br>
                 <input type="text" id="name" name="name" required>
             </div>
 
@@ -98,6 +101,7 @@
             </div>
 
             <div>
+                <!-- Dropdown Menu -->
                 <label for="wonder-option" class="form-label">Which of the wonders did you visit?</label> <br>
                 <select id="wonder-option" name="wonder-option" required>
                     <option value="giza">Pyramids of Giza (honorary)</option>
@@ -111,12 +115,15 @@
                 </select>
             </div>
 
+
+            <!-- Add the story -->
             <div>
                 <label for="story" class="form-label">Tell us your story!</label> <br>
                 <input name="story" id="story" type="text" required>
             </div>
 
             <div>
+                <!-- Submits the page info -->
                 <button type="submit">Submit</button>
             </div>
         </form>

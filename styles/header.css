@@ -2,37 +2,42 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* Even spacing */
     align-items: center;
 
     position: fixed;
+    /* Keeps the header stuck to the top of the window */
     top: 0;
     left: 0;
     right: 0;
+    /* takes up the entire width */
 
     height: 6.25rem;
 
     padding: 0.5rem 2rem;
 
-    /* background-color: purple; */
-
     background-color: rgb(206, 216, 179);
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.311);
 
     z-index: 100;
+    /* Keeps the header ontop of any other items */
 }
 
 #right-section, #left-section {
     height: 100%;
+    /* inherits height from the parent element */
 }
 
 #header-logo {
     filter: invert(1);
+    /* Makes teh header-logo black as it was originally white */
 }
 
 #right-section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* Creating a flexbox for easier positioning of child elements */
 }
 
 .nav-button {
@@ -43,11 +48,13 @@ header {
 
     border: 1px solid black;
     border-radius: 50%;
+    /* Creates a circular div, as the aspect ratio is 1:1 */
 
     align-items: center;
     justify-content: center;
 
     transition: all 0.15s;
+    /* Allows for smooth transitions when hovered */
     margin-left: 2rem;
 
 }
@@ -67,6 +74,7 @@ header {
     cursor: pointer;
 
     transform: scale(1.5);
+    /* simple styling for hovered objects */
 }
 
 

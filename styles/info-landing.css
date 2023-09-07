@@ -5,7 +5,9 @@
 
 #landing-grid {
     display: grid;
+    /* Creates easier positioning */
     grid-template-columns: 60vw 40vw;
+                            /* Creates a 3:2 ratio in width */
 
     width: 100%;
     height: calc(100vh - 7.25rem);
@@ -22,6 +24,8 @@
     -o-mask-image: linear-gradient(to right, black, transparent);
     -moz-mask-image: linear-gradient(to right, black, transparent);
     mask-image: linear-gradient(to right, black, transparent);
+    /* Creates a gradient from left to right, creating a fade effect*/
+    /* Multiple different declarations for browser support, chrome and certain other browsers don't support mask-image without the prefix*/
 
     height: calc(100vh - 7.25rem);
     width: auto;
@@ -41,13 +45,18 @@
 
 #page-title-main {
     text-transform: capitalize;
+    /* using title case */
+
     font-weight: 600;
     font-size: 3rem;
+    /* font styling */
 }
 
 #wonder-fact-list {
     font-size: 2rem;
     text-transform: capitalize;
+    /* title case */
 
     margin-left: 1em;
+    /* accounts for the bullet point */
 }

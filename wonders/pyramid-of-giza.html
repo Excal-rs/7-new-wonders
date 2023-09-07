@@ -21,11 +21,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
 
+    <!-- This is the only file in the "wonders" directory that will be commented as they are all the same, just different text and images -->
+
 </head>
 <body>
     <header>
         <div id="left-section">
             <img src="../icons/web-logo.png" id="header-logo">
+            <!-- The logo for the website, from the index.html file -->
         </div>
         <div id="right-section">
             <div class="nav-button" id="nav0" onclick="location.href = '../index.html'">
@@ -33,7 +36,7 @@
             </div>
             
             -
-
+            <!-- navigation to other pages -->
             <div class="nav-button" id="nav2" onclick="location.href = '../wonders/great-wall-of-china.html'">
                 <img src="../icons/china.svg" class="nav-icons">
             </div>
@@ -58,7 +61,7 @@
         </div>
         </header>
 
-        <section id="info-landing">
+        <section id="info-landing"> 
             <div id="landing-grid">
                 <div id="landing-image-container">
                     <img src="../images/giza.jpg" id="background-image">
@@ -68,6 +71,7 @@
                         The Great Pyramid of Giza (honorary)
                     </p>
 
+                    <!-- A unordered list for the facts about the wonder -->
                     <ul id="wonder-fact-list">
                         <li>Located In Giza, Egypt</li>
                         <li>constructed roughly between 2550 and 2490 BCE</li>
@@ -83,7 +87,7 @@
         </div>
 
         <section class="textual-desciption-section">
-            <div id="textual-description">
+            <div id="textual-description"> <!-- Textual description -->
                 The Great Pyramid of Giza is the largest and oldest of the three great pyramids. Built for the purpose of serving as the tomb of pharaoh Khufu 4500 years ago, it constitutes a grandiose display of status, prosperity, wealth and complex architecture, way beyond any contemporary structure. It was built over the course of 27 years, by using mostly limestone blocks that were available in the area for the structure, bound together by mortar. The pyramid is estimated to be made up of 6 tons of material, standing currently at 139 meters (454 feet) tall. Originally, it would have been coated in white limestone and marble, with its peak covered in sheeted gold, which would've given the pharaoh's resting place a grandiose finish. 
                 <br> <br>
                 On the inside, the pyramid is mostly solid stone, having only three significant rooms: the King's Chamber, the Queen's Chamber and the Subterranean Chamber. The King's Chamber held the pharaoh's sarcophagus, along with many of his possessions, which would be taken with him to the afterlife according to the religious beliefs of ancient Egypt.
@@ -94,11 +98,12 @@
             <img src="../images/fancy-divider.png" id="divider-2h" class="horizontal-divider">
         </div>
 
+        <!-- Same form as the one from, it makes a POST request to the form.php file which will later process the information -->
         <section id="form-section">
             <form action="./scripts/form.php" id="hpage-form" method="post">
                 <div>
-                    <label for="Name" class="form-label">Name:</label> <br>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name" class="form-label">name:</label> <br> 
+                    <input type="text" id="name" name="name" required> <!-- Any input with the "required" tag will prevent the form for being submitted without it containing info-->
                 </div>
     
                 <div>
@@ -107,7 +112,8 @@
                 </div>
     
                 <div>
-                    <label for="wonder-option" class="form-label">Which of the wonders did you visit?</label> <br>
+                    <!-- Drop down menu -->
+                    <label for="wonder-option" class="form-label">Which of the wonders did you visit?</label> <br> 
                     <select id="wonder-option" name="wonder-option" required>
                         <option value="giza">Pyramids of Giza (honorary)</option>
                         <option value="china">Great Wall of China</option>
@@ -126,6 +132,7 @@
                 </div>
     
                 <div>
+                    <!-- Submits the data -->
                     <button type="submit">Submit</button>
                 </div>
             </form>

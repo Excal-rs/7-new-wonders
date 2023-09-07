@@ -1,5 +1,6 @@
 .form-label {
-    font-family: Arial;
+    font-family: Arial; 
+    /* Using the font-family Arial for readability */
 }
 
 #hpage-form div {
@@ -31,4 +32,4 @@
     padding: 0.2rem;
 }
 
-/*  TODO: style the story */
+/* Basic styling */

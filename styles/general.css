@@ -5,14 +5,9 @@
     /* Resetting so I can style myself for each element */
 }
 
-:root {
-    --background-color: 256, 256, 256;
-
-    /* Will add more variables as i develop */
-}
-
 html {
     font-family: Cormorant, Arial, Helvetica, sans-serif ;
+    /* Setting the font-families to be inherited by the elements */
 }
 
 body {
@@ -21,6 +16,7 @@ body {
     /* Prevent horizontal scrolling which isn't desired */
 
     background-color: rgb(206, 216, 179);
+    /* Didn't like how white looked */
 }
 
 section{
@@ -29,4 +25,5 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* By default all content in a generic "section" elements will be centred, can be changed */
 }
