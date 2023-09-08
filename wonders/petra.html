@@ -51,7 +51,7 @@
             <div class="nav-button" id="nav7">
                 <img src="../icons/taj.svg" class="nav-icons" onclick="location.href = '../wonders/taj-mahal.html'">
             </div>
-            <div class="nav-button" id="nav8" onclick="location.href = '../../wonders/christ-the-redeemer.html'">
+            <div class="nav-button" id="nav8" onclick="location.href = '../wonders/christ-the-redeemer.html'">
                 <img src="../icons/christ.svg" class="nav-icons">
             </div>
         </div>
@@ -94,7 +94,47 @@
         </div>
 
         <section id="form-section">
-    <section id="form-section">
+            <form action="" id="hpage-form" method="post">
+                <div class="names-input-grid">
+                    <label for="fname" class="form-label">First Name:</label> <br>
+                    <input type="text" id="fname" name="fname" required>
+                    <label for="lname" class="form-label">Last Name:</label> <br>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+        
+                <div>
+                    <label for="email" class="form-label">Email:</label> <br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div>
+                    <label for="wonder-option" class="form-label">Which of the wonders did you visit?</label> <br>
+                    <select id="wonder-option" name="wonder-option" required>
+                        <option value="giza">Pyramids of Giza (honorary)</option>
+                        <option value="china">Great Wall of China</option>
+                        <option value="petra">Petra</option>
+                        <option value="colosseum">The colosseum</option>
+                        <option value="chichen-itza">Chichen Itza</option>
+                        <option value="machu-picchu">Machu Picchu</option>
+                        <option value="taj-mahal">Taj Mahal</option>
+                        <option value="christ-the-redeemer">Christ the Redeemer</option>
+                    </select>
+        
+                    <br>
+                    <label for="date" class="form-label" required>Date of Visit:</label> <br>
+                    <input type="date" name="date" id="date">
+                </div>
+        
+                <div>
+                    <label for="story" class="form-label">Tell us your story!</label> <br>
+                    <input name="story" id="story" type="text" value="Submit your experience" required>
+                </div>
+        
+                <div>
+                    <!-- Submits the page info -->
+                    <button onclick="formCompletionMessage(event)">Check data Entered</button>
+                </div>
+            </form>
         </section>
 </body>
 </html>

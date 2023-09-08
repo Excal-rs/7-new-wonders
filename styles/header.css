@@ -16,7 +16,7 @@ header {
 
     padding: 0.5rem 2rem;
 
-    background-color: rgb(206, 216, 179);
+    background-color: var(--background-color);
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.311);
 
     z-index: 100;

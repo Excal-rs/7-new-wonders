@@ -5,6 +5,10 @@
     /* Resetting so I can style myself for each element */
 }
 
+:root {
+    --background-color: rgb(170, 222, 212);
+}
+
 html {
     font-family: Cormorant, Arial, Helvetica, sans-serif ;
     /* Setting the font-families to be inherited by the elements */
@@ -15,7 +19,7 @@ body {
     overflow-x: hidden;
     /* Prevent horizontal scrolling which isn't desired */
 
-    background-color: rgb(206, 216, 179);
+    background-color: var(--background-color);
     /* Didn't like how white looked */
 }
 
